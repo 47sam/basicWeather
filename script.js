@@ -128,7 +128,7 @@ const weather = {
       <div class="cards">
         <div class="flex column align-center">
             <h3>${day}</h3>
-            <p>${today.getDate()}/${today.getMonth()}/${today.getFullYear()}</p>
+            <p>${today.getDate()}/${today.getMonth() + 1}/${today.getFullYear()}</p>
         </div>
         <div class="flex column align-center">
             <h2>${Math.round(daily[i].temp.max)}/${Math.round(daily[i].temp.min)} °C</h2>
