@@ -94,7 +94,7 @@ const weather = {
     tempEl.innerHTML = temp + " °C"; 
     humidityEl.innerHTML= humidity + "<span class='font-small'>%</span>";
     speedEl.innerHTML = speed + "<span class='font-small'>km/hr</span>";
-    document.querySelector('#temp').style.background = `url('https://source.unsplash.com/400x300/?${description}+dark')`;
+    document.querySelector('#temp').style.background = `url('https://source.unsplash.com/400x300/?${description}+dark+weather')`;
     document.querySelector('#main').style.background = `url('https://source.unsplash.com/1000x650/?${name}+white')`;
   },
   displayPollution: function(info){
