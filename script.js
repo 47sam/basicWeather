@@ -19,7 +19,8 @@ const directions = ['North', 'NorthEast', 'East', 'SouthEast', 'South', 'SouthWe
 const progressEl = document.querySelector('#progress div');
 const cardHolder = document.querySelector('.scroll');
 const cardsEl = document.getElementsByClassName('cards');
-
+const mainEl = document.querySelector('#main');
+const rootEl = document.querySelector('#root');
 const condition = { 
   Haze: 'https://images.unsplash.com/photo-1526398579509-50c91045b50d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8aGF6ZSBkYXJrfHx8fHx8MTY1MDcxODU3NA&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=150',
   Rain: 'https://images.unsplash.com/photo-1509929626220-f76cfddcd2b5?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=200&ixid=MnwxfDB8MXxyYW5kb218MHx8cmFpbiBkYXJrfHx8fHx8MTY1MDcxODY2MQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=150',
@@ -95,7 +96,8 @@ const weather = {
     humidityEl.innerHTML= humidity + "<span class='font-small'>%</span>";
     speedEl.innerHTML = speed + "<span class='font-small'>km/hr</span>";
     document.querySelector('#temp').style.background = `url('https://source.unsplash.com/400x300/?${description}+dark+weather')`;
-    document.querySelector('#main').style.background = `url('https://source.unsplash.com/1000x650/?${name}+white')`;
+    mainEl.style.background = `url('https://source.unsplash.com/1300x720/?${name}+white')`;
+    rootEl.style.background = document.defaultView.getComputedStyle(mainEl).background;
   },
   displayPollution: function(info){
     const {aqi} = info.list[0].main;
@@ -174,4 +176,4 @@ inputEl.addEventListener('keyup', function(event) {
   }
 });
 
-weather.fetchWeather('tokyo');
+weather.fetchWeather('nagpur');
