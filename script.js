@@ -53,7 +53,7 @@ const weather = {
   },
   fetchPollution: function({lon, lat}){
     fetch(
-      `http://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${this.apiKey}
+      `https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${this.apiKey}
       `
     )
       .then((response) => {
