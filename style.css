@@ -293,7 +293,7 @@ input:focus {
   filter: invert(20%);
 }
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.607);
+  background-color: rgba(255, 255, 255);
   cursor: pointer;
 }
 .btn:hover img {
