@@ -141,7 +141,7 @@ input:focus {
   filter: drop-shadow(0 0 0.2em black);
 }
 #poll {
-  background: url(/images/pollution.jpg);
+  background: url('/images/pollution.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
