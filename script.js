@@ -153,7 +153,7 @@ document
     "keyup",
     (e) => "Enter" == e.key && weather.search()
   ),
-  weather.fetchWeather("nagpur"),
+  weather.fetchWeather("Mumbai"),
   btnEl[0].addEventListener("click", () =>
     cardsEl[0].scrollIntoView({ behavior: "smooth" })
   ),
